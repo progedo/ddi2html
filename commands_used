@@ -1,0 +1,7 @@
+To create a hand-made html from the xml (vim)
+%s/<\([^/][^> ]*\)/<div class="\1"/
+%s#</.*>#</div>#
+%s#\(^.*holdings.*\)/>$#\1></div>#gc
+%s#<div class="?.*##gc
+%s#<div class="!DOCTYPE".*##gc
+%s#\(<div class="codeBook"\) version=''>#\1>#
