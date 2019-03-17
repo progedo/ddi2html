@@ -13,3 +13,10 @@ Remove empty div verStmt
 Remove empty div rspStmt
 %s#<.*specPerm.*>##gc
 %s#<.*ExtLink.*>##gc
+
+
+# Example of usage
+
+@ddi = File.read("example_DDI_2.xml")
+@xml = XmlHasher.parse(@ddi)
+@xml[:codeBook][:stdyDscr][:stdyInfo][:abstract]

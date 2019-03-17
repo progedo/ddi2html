@@ -1,29 +1,37 @@
-div.catgry div.labl {
-  padding-left: 1.5em;
-}
+.catgry { padding-left: 1.5em }
 
-div.catgry div.catValu {
-  display: none;
-}
+.location > .labl, .serName { font-size: 1.5em }
 
-div.location > div.labl {
+.titlStmt > .titl { font-size: 2em }
+
+.stdyDscr > div > div { padding: 0.6em }
+
+.catgry .catValu { display: none }
+.stdyDscr > .citation > .titlStmt { display: none }
+.holdings { display: none }
+.prodStmt { display: none }
+.IDNo     { display: none }
+.software { display: none }
+.fileType { display: none }
+.fileName { display: none }
+.version  { display: none }
+.varQnty  { display: none }
+.caseQnty { display: none }
+
+.topcClas { padding-top: 1em }
+
+.var > .labl {
   font-size: 1.5em;
+  padding: 0.5em;
 }
 
-div.titlStmt > div.titl {
-  font-size: 2em;
+.varGrp > .labl, .keyword, .catgry .labl {
+  display: list-item;
+  list-style-position: inside;
+  padding-left: 0.3em;
 }
 
-div.stdyDscr > div {
-  padding: 1.2em;
+.abstract, .notes {
+  background-color: #CDCDCD;
+  margin: 0.3em;
 }
-
-div.stdyDscr > div > div {
-  padding: 1em;
-}
-
-div.holdings {
-  display: none;
-}
-
-.IDNo { display: none; }
